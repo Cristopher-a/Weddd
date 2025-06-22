@@ -50,7 +50,23 @@ function App() {
 
     tryAutoPlay()
   }, [])
+useEffect(() => {
+  const elements = document.querySelectorAll('.animate-on-scroll')
 
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view')
+      } else {
+        entry.target.classList.remove('in-view')
+      }
+    })
+  }, { threshold: 0.1 })
+
+  elements.forEach(el => observer.observe(el))
+
+  return () => observer.disconnect()
+}, [])
   // Función toggle para reproducir o pausar
   const toggleAudio = () => {
     const audio = document.getElementById("wedding-audio")
@@ -69,20 +85,21 @@ function App() {
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0)), url(${bg})`
       }}>
         <div className="content">
-          <p className="subtitle">Después de mucho, ha llegado el momento.</p>
-          <p className="subsubtitle">¡Nos casamos! <button
+          <p className="subtitle1">Después de mucho, ha llegado el momento.</p>
+          <p className="subsubtitle1">¡Nos casamos! </p>
+
+
+          <h1 className="title1">Kenny & Juan</h1>
+          <audio id="wedding-audio" src={audio} />
+        </div>
+      </section>
+      <button
             id="play-button"
             className="play-button"
             onClick={toggleAudio}
           >
             ▶
-          </button></p>
-
-
-          <h1 className="title">Kenny & Juan</h1>
-          <audio id="wedding-audio" src={audio} />
-        </div>
-      </section>
+          </button>
 
       <div className="flowers-divider">
         <img src={flower1} className="flower-left" />
@@ -91,29 +108,30 @@ function App() {
       </div>
 
       <section className="section2">
-        <div className="container">
-          <div className="box"><h2 className="countertext">{timeLeft.days}</h2></div>
-          <div className="box"><h2 className="countertext">{timeLeft.hours}</h2></div>
-          <div className="box"><h2 className="countertext">{timeLeft.minutes}</h2></div>
-        </div>
+  <div className="container animate-on-scroll">
+    <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.days}</h2></div>
+    <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.hours}</h2></div>
+    <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.minutes}</h2></div>
+  </div>
 
-        <h3 className="daysubtitle">Viernes 8 de Agosto</h3>
-        <div className='separador'>
-          <p className="text">
-            El amor ha guiado nuestro camino y cada segundo que pasa<br />
-            nos acerca al momento en que uniremos nuestras vidas para siempre.<br /><br />
-            Cuando este contador llegue a cero, las campanas de la felicidad sonarán,<br />
-            y ante nuestros seres queridos, diremos el <br /> <strong>'sí, acepto'</strong> <br />que marcará
-            el inicio de nuestra eternidad.
-          </p>
-        </div>
-      </section>
+  <h3 className="daysubtitle animate-on-scroll">Viernes 8 de Agosto</h3>
 
-      <div className="flowers-divider2">
-        <img src={flower3} className="flower-left2" />
-        <img src={flower4} className="flower-center2" />
-        <img src={flower2} className="flower-right2" />
-      </div>
+  <div className='separador'>
+    <p className="text animate-on-scroll">
+      El amor ha guiado nuestro camino y cada segundo que pasa<br />
+      nos acerca al momento en que uniremos nuestras vidas para siempre.<br /><br />
+      Cuando este contador llegue a cero, las campanas de la felicidad sonarán,<br />
+      y ante nuestros seres queridos, diremos el <br /> <strong>'sí, acepto'</strong> <br />que marcará
+      el inicio de nuestra eternidad.
+    </p>
+  </div>
+</section>
+
+      <div className="flowers-divider2 animate-on-scroll">
+  <img src={flower3} className="flower-left2 animate-on-scroll" />
+  <img src={flower4} className="flower-center2 animate-on-scroll" />
+  <img src={flower2} className="flower-right2 animate-on-scroll" />
+</div>
 
       <section className="section3">
         <div className="separador">

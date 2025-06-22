@@ -179,14 +179,85 @@ padding-top: 10px;
   margin-top: 10px;
   display: flex;
 }
-.daysubtitle {
-  font-size: 38px; 
-  font-family: 'Alex Brush', cursive;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
+.subtitle1 {
+  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1.2s ease-out forwards;
+  animation-delay: 0s;
 }
+
+.subsubtitle1 {
+  font-size: 3rem;
+  font-family: 'Alex Brush', cursive;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInGrow 1.2s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.title1 {
+  font-size: 4.8rem;
+  font-family: 'Great Vibes', cursive;
+  margin-top: 130px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  align-self: start;
+  text-align: center;
+  margin-left: -70px;
+
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideDown 1.2s ease-out forwards;
+  animation-delay: 1.4s; /* Ahora aparece al final */
+}
+
+/* Animaciones */
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
 .vestsubtitle {
   font-size: 38px; 
   font-family: 'Alex Brush', cursive;
@@ -203,13 +274,7 @@ padding-top: 10px;
   font-weight: 500;
 }
 
-.text{
-  font-size: 1.2rem;
-  font-family: 'Cormorant Garamond', serif;
-  
-  text-align: center;
-  margin-top: 50px;
-}
+
 .textvest{
   font-size: 1.2rem;
   font-family: 'Cormorant Garamond', serif;
@@ -252,21 +317,15 @@ padding-top: 10px;
   padding-right: 5px;
   text-align: center;
 }
-
-.counter-label {
-  font-size: 1rem;
-  margin-bottom: 0.4rem;
-  font-weight: 600;
-  color: #555;
+.daysubtitle {
+  font-size: 38px; 
+  font-family: 'Alex Brush', cursive;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.countertext {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #222;
-  margin: 0;
-
-}
   .countertext{
     font-size: 4rem;
     display: flex;
@@ -276,6 +335,81 @@ padding-top: 10px;
     color: #000;
     font-weight: bold;  
   }
+  .text{
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  
+  text-align: center;
+  margin-top: 50px;
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación especial para texto */
+.countertext.in-view {
+  animation: popUp 0.8s ease-out forwards;
+}
+
+.daysubtitle.in-view {
+  animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+.text.in-view {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes popUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
   .card {
   width: 90vw;
   border: 3px solid #87a8e4;
@@ -303,7 +437,6 @@ padding-top: 10px;
   align-items: center;
   position: relative;
 
-  /* Centrado absoluto */
   width: 160vw;
   left: 50%;
   transform: translateX(-50%);
@@ -314,9 +447,16 @@ padding-top: 10px;
   margin-bottom: -100px;
   z-index: 2;
   pointer-events: none;
+
+  animation: fadeInBounce 1.5s ease-out forwards;
 }
-.flower {
-  position: relative;
+
+.flower-left,
+.flower-center,
+.flower-right {
+  opacity: 0;
+  transform: scale(0.8) translateY(-20px);
+  animation: flowerIn 1.4s ease-out forwards;
 }
 
 .flower-left {
@@ -324,6 +464,7 @@ padding-top: 10px;
   margin-left: -40px;
   max-height: 190px;
   z-index: 3;
+  animation-delay: 0.3s;
 }
 
 .flower-center {
@@ -331,12 +472,72 @@ padding-top: 10px;
   margin-top: -50px;
   max-height: 250px;
   z-index: 2;
+  animation-delay: 0.6s;
 }
 
 .flower-right {
   margin-left: -75px;
   max-height: 190px;
   z-index: 3;
+  animation-delay: 0.9s;
+}
+
+/* Animación de entrada rebote */
+@keyframes flowerIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-30px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Fade-in sutil para el contenedor */
+@keyframes fadeInBounce {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+/* Movimiento flotante continuo */
+.flower-left,
+.flower-right {
+  animation-name: flowerIn, float;
+  animation-duration: 1.4s, 6s;
+  animation-delay: 0.3s, 1.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1, infinite;
+  animation-timing-function: ease-out, ease-in-out;
+}
+
+.flower-center {
+  animation-name: flowerIn, floatCenter;
+  animation-duration: 1.4s, 7s;
+  animation-delay: 0.6s, 1.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1, infinite;
+  animation-timing-function: ease-out, ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes floatCenter {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
 }
 .flowers-divider2 {
   display: flex;
@@ -367,6 +568,43 @@ padding-top: 10px;
   margin-left: -70px;
   max-height: 250px;
   margin-top: -50px;
+}
+
+/* Base para todos los elementos que se animan al hacer scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Opcional: animaciones sutiles específicas */
+.flower-left2.in-view {
+  animation: flowerFloatLeft 5s ease-in-out infinite;
+}
+.flower-center2.in-view {
+  animation: flowerFloatCenter 6s ease-in-out infinite;
+}
+.flower-right2.in-view {
+  animation: flowerFloatRight 5.5s ease-in-out infinite;
+}
+
+/* Keyframes para movimiento flotante */
+@keyframes flowerFloatLeft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes flowerFloatCenter {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes flowerFloatRight {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .flowers-divider3 {
@@ -491,4 +729,6 @@ padding-top: 10px;
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+
 }
+
