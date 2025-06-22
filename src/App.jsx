@@ -82,17 +82,16 @@ useEffect(() => {
   return (
     <div className="main">
       <section className="section1" style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0)), url(${bg})`
-      }}>
-        <div className="content">
-          <p className="subtitle1">Después de mucho, ha llegado el momento.</p>
-          <p className="subsubtitle1">¡Nos casamos! </p>
+  backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0)), url(${bg})`
+}}>
+  <div className="content">
+    <p className="subtitle1 animate-on-scroll">Después de mucho, ha llegado el momento.</p>
+    <p className="subsubtitle1 animate-on-scroll">¡Nos casamos!</p>
+    <h1 className="title1 animate-on-scroll">Kenny & Juan</h1>
+  </div>
+</section>
 
-
-          <h1 className="title1">Kenny & Juan</h1>
-          <audio id="wedding-audio" src={audio} />
-        </div>
-      </section>
+      <audio id="wedding-audio" src={audio} />
       <button
             id="play-button"
             className="play-button"
