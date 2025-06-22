@@ -236,7 +236,7 @@ width: 100vw;;
     font-weight: bold;  
   }
   .card {
-  width: 100vh;
+  width: 10vh;
   border: 3px solid #87a8e4;
   background-color: #ffffff;
   font-family: 'Georgia', serif;
