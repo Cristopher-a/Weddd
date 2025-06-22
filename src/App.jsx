@@ -67,7 +67,7 @@ function App() {
   </div>
 
   <h3 className="daysubtitle">Viernes 8 de Agosto</h3>
-
+    <div className='separador'>
   <p className="text">
     El amor ha guiado nuestro camino y cada segundo que pasa<br />
     nos acerca al momento en que uniremos nuestras vidas para siempre.<br /><br />
@@ -75,6 +75,7 @@ function App() {
     y ante nuestros seres queridos, diremos el <br /> <strong>'sí, acepto'</strong> <br />que marcará
     el inicio de nuestra eternidad.
   </p>
+  </div>
 </section>
 <div className="flowers-divider2">
   <img src={flower3} className="flower-left2" />
