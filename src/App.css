@@ -270,8 +270,8 @@ padding-top: 10px;
   top: -50px;
 
   /* Cambia esto 👇 */
-  width: 100%;
-  max-width: 100vw;
+  width: 160%;
+  max-width: 160vw;
 
   pointer-events: none;
   overflow: visible;
