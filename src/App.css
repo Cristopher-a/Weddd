@@ -36,6 +36,9 @@ audio {
 .play-button:focus {
   outline: none;
 }
+
+
+
 .section1 {
   height: 100vh;
   scroll-snap-align: start;
@@ -144,7 +147,7 @@ padding-top: 10px;
 .title {
   font-size:4.8rem;
   font-family: 'Great Vibes', cursive;
-  margin-top: 200px;
+  margin-top: 130px;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
   align-self: start;
   text-align: center;
