@@ -20,13 +20,23 @@ audio {
 
 /* Estilo del botón de reproducción */
 .play-button {
-  background-color: transparent;
+  position: fixed;       /* Fijo en la pantalla */
+  bottom: 20px;          /* 20px desde abajo */
+  right: 20px;           /* 20px desde la derecha */
+  z-index: 1000;         /* Para que quede encima de otros elementos */
+  /* Opcional: estilos para que se vea bien */
+  background-color: #ffffff10;
   border: none;
-  font-size: 48px;
-  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.315);
   cursor: pointer;
-  transition: color 0.3s ease;
-  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .play-button:hover {
@@ -349,12 +359,12 @@ padding-top: 10px;
 }
 
 .flower-right2 {
-  margin-left: -65px;
+  margin-left: -60px;
    max-height: 190px;
   z-index: 3;
 }
 .flower-center2 {
-  margin-left: -90px;
+  margin-left: -70px;
   max-height: 250px;
   margin-top: -50px;
 }
