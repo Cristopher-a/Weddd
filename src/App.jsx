@@ -75,7 +75,7 @@ function App() {
             className="play-button"
             onClick={toggleAudio}
           >
-            '▶'
+            ▶
           </button></p>
 
 

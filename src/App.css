@@ -167,6 +167,7 @@ padding-top: 10px;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
   margin-bottom: 20px;
   margin-top: 10px;
+  display: flex;
 }
 .daysubtitle {
   font-size: 38px; 
@@ -348,7 +349,7 @@ padding-top: 10px;
 }
 
 .flower-right2 {
-  margin-left: -100px;
+  margin-left: -65px;
    max-height: 190px;
   z-index: 3;
 }
