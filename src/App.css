@@ -259,22 +259,22 @@ padding-top: 10px;
   font-size: 22px;
   padding: 10px;
   font-weight: bold; z-index: 4;
-}
-.flowers-divider {
-  position: relative;
+}.flowers-divider {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  position: relative;
+
+  /* Centrado absoluto */
+  width: 160vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: -50px;
   margin-top: -80px;
   margin-bottom: -100px;
-  top: -50px;
-
-  /* Cambia esto 👇 */
-  width: 160%;
-  max-width: 160vw;
-
+  z-index: 2;
   pointer-events: none;
-  overflow: visible;
 }
 .flower {
   position: relative;
