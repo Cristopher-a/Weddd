@@ -6,6 +6,7 @@ import flower2 from './assets/Flores/r2.png'
 import flower3 from './assets/Flores/r3.png'
 import flower4 from './assets/Flores/r4.png'
 import vestimenta from './assets/Vestimenta.svg'
+import audio from './assets/song/Wrong.mp3'
 function App() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
 
@@ -34,7 +35,9 @@ function App() {
   }, [])
 
   return (
+    
     <div className="main">
+      
       <section
         className="section1"
          style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0)), url(${bg})`}}
@@ -42,7 +45,12 @@ function App() {
         <div className="content">
           <p className="subtitle">Después de mucho, ha llegado el momento.</p>
           <p className="subsubtitle">¡Nos casamos!</p>
+          <button className="play-button" onClick={() => document.getElementById("wedding-audio").play()}>
+  ▶
+</button>
           <h1 className="title">Kenny & Juan</h1>
+          <audio autoPlay id="wedding-audio" src={audio} />
+  
         </div>
       </section>
 <div className="flowers-divider">
@@ -85,26 +93,26 @@ function App() {
       <section className="section3">
    
   <div className="separador">      
-    <div class="card">
-  <div class="card-header">Ceremonia</div>
-  <div class="card-body">
+    <div className="card">
+  <div className="card-header">Ceremonia</div>
+  <div className="card-body">
     <p>Ven a compartir con nosotros la<br/> bendición de este gran día.</p>
-    <p class="hour">6:00 PM - 7:00 PM</p>
-    <p class="place">Templo de Santo Domingo de Guzmán</p>
-    <a class="map-button" href="https://maps.app.goo.gl/zTNFU7F9FPT6sWZa9" target="_blank">
+    <p className="hour">6:00 PM - 7:00 PM</p>
+    <p className="place">Templo de Santo Domingo de Guzmán</p>
+    <a className="map-button" href="https://maps.app.goo.gl/zTNFU7F9FPT6sWZa9" target="_blank">
       <img src="https://www.gstatic.com/images/icons/material/system/2x/place_gm_blue_24dp.png" alt="icon" />
       Abrir mapa del lugar
     </a>
   </div>
 </div>
-<div class="card">
-  <div class="card-header">Recepción</div>
-  <div class="card-body">
-    <p class="place">Salón Jardines</p>
+<div className="card">
+  <div className="card-header">Recepción</div>
+  <div className="card-body">
+    <p className="place">Salón Jardines</p>
     <p>El amor se celebra bailando, riendo y compartiendo. ¡Te esperamos en el salón!</p>
-    <p class="hour">8:oo PM - 3:00 AM</p>
-    <p class="place">Av. Jardines de Morelos 158</p>
-    <a class="map-button" href="https://maps.app.goo.gl/W3EwrRJrEKvjVki29?g_st=aw" target="_blank">
+    <p className="hour">8:oo PM - 3:00 AM</p>
+    <p className="place">Av. Jardines de Morelos 158</p>
+    <a className="map-button" href="https://maps.app.goo.gl/W3EwrRJrEKvjVki29?g_st=aw" target="_blank">
       <img src="https://www.gstatic.com/images/icons/material/system/2x/place_gm_blue_24dp.png" alt="icon" />
       Abrir mapa del lugar
     </a>

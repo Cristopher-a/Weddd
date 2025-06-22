@@ -14,7 +14,28 @@ body, html {
   overflow-y:visible;
   overflow-x: hidden;
 }
+audio {
+  display: none;
+}
 
+/* Estilo del botón de reproducción */
+.play-button {
+  background-color: transparent;
+  border: none;
+  font-size: 48px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 20px;
+}
+
+.play-button:hover {
+  color: #f8caca;
+}
+
+.play-button:focus {
+  outline: none;
+}
 .section1 {
   height: 100vh;
   scroll-snap-align: start;
