@@ -77,7 +77,7 @@ function App() {
             className="play-button"
             onClick={toggleAudio}
           >
-            {isPlaying ? '⏸' : '▶'}
+            '▶'
           </button>
 
           <h1 className="title">Kenny & Juan</h1>
