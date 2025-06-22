@@ -84,7 +84,7 @@ function App() {
 </div>
       <section className="section3">
    
-        
+  <div className="separador">      
     <div class="card">
   <div class="card-header">Ceremonia</div>
   <div class="card-body">
@@ -109,6 +109,7 @@ function App() {
       Abrir mapa del lugar
     </a>
   </div>
+</div>
 </div>
       </section>
 <div className="flowers-divider3">
