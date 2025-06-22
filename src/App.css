@@ -270,6 +270,8 @@ padding-top: 10px;
   margin-bottom: -100px;
   top:-50px;
   width: 160vw;
+  align-self: center;
+  align-items: center;
 }
 
 
