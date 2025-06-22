@@ -424,7 +424,63 @@ padding-top: 10px;
   z-index: 4;
   
 }
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+/* Animaciones ordenadas */
+.subtitle1.animate-on-scroll.in-view {
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+.subsubtitle1.animate-on-scroll.in-view {
+  animation: fadeInGrow 1.2s ease-out forwards;
+  animation-delay: 0.4s;
+}
+.title1.animate-on-scroll.in-view {
+  animation: fadeSlideDown 1.2s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+/* Keyframes existentes o nuevos */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .card-header {
   background-color: #87a8e4;
   color: white;
