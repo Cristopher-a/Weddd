@@ -48,7 +48,8 @@ body, html {
     );
   background-blend-mode: multiply; 
    min-height: 100vh;
-width: 100vw;;
+width: 100vw;
+padding-top: 10px;
 
   }
   
@@ -268,7 +269,7 @@ width: 100vw;;
   pointer-events: none;
   margin-bottom: -100px;
   top:-50px;
-  width: 120vw;
+  width: 160vw;
 }
 
 
