@@ -70,15 +70,14 @@ function App() {
       }}>
         <div className="content">
           <p className="subtitle">Después de mucho, ha llegado el momento.</p>
-          <p className="subsubtitle">¡Nos casamos!</p>
-
-          <button
+          <p className="subsubtitle">¡Nos casamos! <button
             id="play-button"
             className="play-button"
             onClick={toggleAudio}
           >
             '▶'
-          </button>
+          </button></p>
+
 
           <h1 className="title">Kenny & Juan</h1>
           <audio id="wedding-audio" src={audio} />
