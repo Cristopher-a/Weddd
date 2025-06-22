@@ -25,7 +25,7 @@ audio {
   right: 20px;           /* 20px desde la derecha */
   z-index: 1000;         /* Para que quede encima de otros elementos */
   /* Opcional: estilos para que se vea bien */
-  background-color: #ffffff10;
+  background-color: #ffffffec;
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -285,7 +285,6 @@ padding-top: 10px;
   padding: 20px auto;
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-left: 14px;
   position: relative;
   z-index: 4;
   
