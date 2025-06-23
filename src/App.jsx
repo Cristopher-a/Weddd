@@ -134,7 +134,7 @@ useEffect(() => {
 </div>
 
       <section className="section3">
-        <div className="separador">
+        <div className="separador2">
           <div className="card">
             <div className="card-header">Ceremonia</div>
             <div className="card-body">

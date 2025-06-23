@@ -66,6 +66,12 @@ audio {
   margin: 0 auto;
   align-items: center;
 }
+.separador2{
+  width: 85vw;
+  align-self: center;
+  margin: 0 auto;
+  align-items: center;
+}
 .section2 {
      background-color: #fff1df; 
   background-image:
@@ -413,7 +419,7 @@ padding-top: 10px;
   transform: translateY(0);
 }
   .card {
-  width: 90vw;
+  width: 85vw;
   border: 3px solid #87a8e4;
   background-color: #ffffff;
   font-family: 'Georgia', serif;
@@ -421,7 +427,7 @@ padding-top: 10px;
   padding: 20px auto;
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 0px;
   position: relative;
   z-index: 4;
   
@@ -605,7 +611,7 @@ padding-top: 10px;
   z-index: 2;
   pointer-events: none;
   margin-bottom: -120px;
-  top:-95px;
+  top:-100px;
 }
 
 
