@@ -303,7 +303,7 @@ padding-top: 10px;
 .container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0px;
         padding-top: 80px;
         max-width: 98vw;
   }
@@ -338,7 +338,7 @@ padding-top: 10px;
 .box {
   background: rgba(135, 168, 222, 0.418);
   border-radius: 20px;
-  margin: 10px;
+  margin: 7px;
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   width: 80px;
@@ -646,7 +646,6 @@ display: inline;
   transform: translateY(0);
 }
 
-/* Opcional: animaciones sutiles específicas */
 .flower-left2.in-view {
   animation: flowerFloatLeft 5s ease-in-out infinite;
 }
@@ -654,6 +653,15 @@ display: inline;
   animation: flowerFloatCenter 6s ease-in-out infinite;
 }
 .flower-right2.in-view {
+  animation: flowerFloatRight 5.5s ease-in-out infinite;
+}
+.flower-left3.in-view {
+  animation: flowerFloatLeft 5s ease-in-out infinite;
+}
+.flower-center3.in-view {
+  animation: flowerFloatCenter 6s ease-in-out infinite;
+}
+.flower-right3.in-view {
   animation: flowerFloatRight 5.5s ease-in-out infinite;
 }
 .flower-left.in-view {
@@ -797,11 +805,5 @@ display: inline;
   position: relative;
   top: 70px;
   left: 100px;
-}
-/* Animación sutil */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-
 }
 

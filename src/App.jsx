@@ -6,6 +6,8 @@ import flower2 from './assets/Flores/r2.png'
 import flower3 from './assets/Flores/r3.png'
 import flower4 from './assets/Flores/r4.png'
 import vestimenta from './assets/Vestimenta.svg'
+import madre from './assets/SVG/Recurso 3.svg'
+import padre from './assets/SVG/Recurso 4.svg'
 import audio from './assets/song/Wrong-Instrumental.mp3'
 
 
@@ -91,6 +93,7 @@ useEffect(() => {
   </div>
 </section>
 
+
       <audio id="wedding-audio" src={audio} />
       <button
             id="play-button"
@@ -100,28 +103,56 @@ useEffect(() => {
             ▶
           </button>
 
-      <div className="flowers-divider animate-on-scroll">
+      <div className="flowers-divider ">
         <img src={flower1} className="flower-left animate-on-scroll" />
-        <img src={flower2} className="flower-center animate-on-scroll" />
+        <img src={flower2} className="flower-center animate-on-scroll " />
         <img src={flower3} className="flower-right animate-on-scroll" />
+      </div>
+       <section className="section4">
+        <p className="textvest">
+           El amor que hoy celebramos tiene raíces profundas.
+Fuimos criados con ternura, paciencia y valores que nos mostraron el verdadero significado del compromiso.
+          </p>
+        <div className="vestimenta">
+          <img src={madre} className='vestimentaimg' />
+          <p className="textvest">
+            Laura Claudia Sánchez Luna <br />
+            Rafael Gama Rangel
+          </p>
+          <img src={padre} className='vestimentaimg' />
+          <p className="textvest">
+            Ruth Pimentel Ávila
+          </p>
+          <p className="textvest">
+            Gracias a su ejemplo y bendición, hoy damos este paso, confiando plenamente en el<strong>“para siempre”</strong>.
+          </p>
+       
+
+        </div>
+      </section>
+
+      <div className="flowers-divider4">
+        <img src={flower4} className="flower-left4" />
+        <img src={flower3} className="flower-center4" />
+        <img src={flower1} className="flower-right4" />
       </div>
 
       <section className="section2">
  <div className="container animate-on-scroll">
   <div className="box animate-on-scroll">
-    <h2 className="countertext animate-on-scroll">{formatNumber(timeLeft.days)}</h2>
+    <h2 className="countertext animate-on-scroll">{timeLeft.days}</h2>
     <p className="counter-label">Días</p>
   </div>
   <div className="box animate-on-scroll">
-    <h2 className="countertext animate-on-scroll">{formatNumber(timeLeft.hours)}</h2>
+    <h2 className="countertext animate-on-scroll">{timeLeft.hours}</h2>
     <p className="counter-label ">Horas</p>
   </div>
   <div className="box animate-on-scroll">
-    <h2 className="countertext animate-on-scroll">{formatNumber(timeLeft.minutes)}</h2>
+    <h2 className="countertext animate-on-scroll">{timeLeft.minutes}</h2>
     <p className="counter-label">Minutos</p>
   </div>
   <div className="box animate-on-scroll">
-    <h2 className="countertext animate-on-scroll">{formatNumber(timeLeft.seconds)}</h2>
+    <h2 className="countertext animate-on-scroll">{timeLeft.seconds}</h2>
     <p className="counter-label ">Segundos</p>
   </div>
 </div>
@@ -139,7 +170,7 @@ useEffect(() => {
   </div>
 </section>
 
-      <div className="flowers-divider2 animate-on-scroll">
+      <div className="flowers-divider2 ">
   <img src={flower3} className="flower-left2 animate-on-scroll" />
   <img src={flower4} className="flower-center2 animate-on-scroll" />
   <img src={flower2} className="flower-right2 animate-on-scroll" />
@@ -150,10 +181,10 @@ useEffect(() => {
           <div className="card animate-on-scroll">
             <div className="card-header ">Ceremonia</div>
             <div className="card-body animate-on-scroll">
-              <p className='animate-on-scroll'>Ven a compartir con nosotros la<br /> bendición de este gran día.</p>
-              <p className="hour animate-on-scroll">6:00 PM - 7:00 PM</p>
-              <p className="place animate-on-scroll">Templo de Santo Domingo de Guzmán</p>
-              <a className="map-button animate-on-scroll" href="https://maps.app.goo.gl/zTNFU7F9FPT6sWZa9" target="_blank">
+              <p >Ven a compartir con nosotros la<br /> bendición de este gran día.</p>
+              <p className="hour ">6:00 PM - 7:00 PM</p>
+              <p className="place ">Templo de Santo Domingo de Guzmán</p>
+              <a className="map-button " href="https://maps.app.goo.gl/zTNFU7F9FPT6sWZa9" target="_blank">
                 <img src="https://www.gstatic.com/images/icons/material/system/2x/place_gm_blue_24dp.png" alt="icon" />
                 Abrir mapa del lugar
               </a>
@@ -163,11 +194,11 @@ useEffect(() => {
           <div className="card animate-on-scroll">
             <div className="card-header">Recepción</div>
             <div className="card-body animate-on-scroll">
-              <p className="place animate-on-scroll">Salón Jardines</p>
-              <p className='animate-on-scroll'>El amor se celebra bailando, riendo y compartiendo. ¡Te esperamos en el salón!</p>
-              <p className="hour animate-on-scroll">8:00 PM - 3:00 AM</p>
-              <p className="place animate-on-scroll">Av. Jardines de Morelos 158</p>
-              <a className="map-button animate-on-scroll" href="https://maps.app.goo.gl/W3EwrRJrEKvjVki29?g_st=aw" target="_blank">
+              <p className="place ">Salón Jardines</p>
+              <p >El amor se celebra bailando, riendo y compartiendo. ¡Te esperamos en el salón!</p>
+              <p className="hour ">8:00 PM - 3:00 AM</p>
+              <p className="place">Av. Jardines de Morelos 158</p>
+              <a className="map-button" href="https://maps.app.goo.gl/W3EwrRJrEKvjVki29?g_st=aw" target="_blank">
                 <img src="https://www.gstatic.com/images/icons/material/system/2x/place_gm_blue_24dp.png" alt="icon" />
                 Abrir mapa del lugar
               </a>
@@ -177,9 +208,9 @@ useEffect(() => {
       </section>
 
       <div className="flowers-divider3">
-        <img src={flower1} className="flower-left3" />
-        <img src={flower2} className="flower-center3" />
-        <img src={flower4} className="flower-right3" />
+        <img src={flower1} className="flower-left3 animate-on-scroll" />
+        <img src={flower2} className="flower-center3 animate-on-scroll" />
+        <img src={flower4} className="flower-right3 animate-on-scroll" />
       </div>
 
       <section className="section4">
