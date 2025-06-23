@@ -299,23 +299,23 @@ padding-top: 10px;
 .container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-        padding-top: 50px;
+    gap: 10px;
+        padding-top: 80px;
         max-width: 98vw;
   }
 .box {
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
   background-color: #B1D2E8;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
 
   border-radius: 1rem;
   padding-left: 5px;
   padding-right: 5px;
   text-align: center;
+  min-width: 70px;
+
 }
 .daysubtitle {
   font-size: 38px; 
@@ -333,7 +333,9 @@ padding-top: 10px;
     align-items: center;
     justify-self: start;
     color: #000;
-    font-weight: bold;  
+    font-weight: bold; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
   }
   .text{
   font-size: 1.2rem;
@@ -498,7 +500,7 @@ padding-top: 10px;
   transform: translateX(-50%);
   height: 180px;
 
-  top: -45px;
+  top: -20px;
   margin-top: -80px;
   margin-bottom: -100px;
   z-index: 2;
@@ -603,7 +605,7 @@ padding-top: 10px;
   z-index: 2;
   pointer-events: none;
   margin-bottom: -120px;
-  top:-100px;
+  top:-95px;
 }
 
 

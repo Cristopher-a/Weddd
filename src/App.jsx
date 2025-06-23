@@ -111,6 +111,7 @@ useEffect(() => {
     <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.days}</h2></div>
     <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.hours}</h2></div>
     <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.minutes}</h2></div>
+    <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.seconds}</h2></div>
   </div>
 
   <h3 className="daysubtitle animate-on-scroll">Viernes 8 de Agosto</h3>
