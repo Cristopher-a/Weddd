@@ -6,7 +6,7 @@ import flower2 from './assets/Flores/r2.png'
 import flower3 from './assets/Flores/r3.png'
 import flower4 from './assets/Flores/r4.png'
 import vestimenta from './assets/Vestimenta.svg'
-import audio from './assets/song/Wrong.mp3'
+import audio from './assets/song/Wrong-Instrumental.mp3'
 
 
 function App() {
