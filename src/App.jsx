@@ -12,7 +12,7 @@ import audio from './assets/song/Wrong-Instrumental.mp3'
 function App() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
   const [isPlaying, setIsPlaying] = useState(false)
-
+const formatNumber = (num) => num.toString().padStart(2, '0')
   const targetDate = new Date('2025-08-08T18:00:00')
 
   useEffect(() => {
@@ -107,12 +107,24 @@ useEffect(() => {
       </div>
 
       <section className="section2">
-  <div className="container animate-on-scroll">
-    <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.days}</h2></div>
-    <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.hours}</h2></div>
-    <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.minutes}</h2></div>
-    <div className="box animate-on-scroll"><h2 className="countertext animate-on-scroll">{timeLeft.seconds}</h2></div>
+ <div className="container animate-on-scroll">
+  <div className="box animate-on-scroll">
+    <h2 className="countertext animate-on-scroll">{timeLeft.days}</h2>
+    <p className="counter-label">Días</p>
   </div>
+  <div className="box animate-on-scroll">
+    <h2 className="countertext animate-on-scroll">{timeLeft.hours}</h2>
+    <p className="counter-label ">Horas</p>
+  </div>
+  <div className="box animate-on-scroll">
+    <h2 className="countertext animate-on-scroll">{timeLeft.minutes}</h2>
+    <p className="counter-label">Minutos</p>
+  </div>
+  <div className="box animate-on-scroll">
+    <h2 className="countertext animate-on-scroll">{timeLeft.seconds}</h2>
+    <p className="counter-label ">Segundos</p>
+  </div>
+</div>
 
   <h3 className="daysubtitle animate-on-scroll">Viernes 8 de Agosto</h3>
 
