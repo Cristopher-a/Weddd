@@ -207,7 +207,6 @@ padding-top: 10px;
 
   opacity: 0;
   transform: scale(0.8);
-  animation: fadeInGrow 1.2s ease-out forwards;
   animation-delay: 0.6s;
 }
 
@@ -222,7 +221,6 @@ padding-top: 10px;
 
   opacity: 0;
   transform: translateY(-30px);
-  animation: fadeSlideDown 1.2s ease-out forwards;
   animation-delay: 1.4s; /* Ahora aparece al final */
 }
 
@@ -316,7 +314,27 @@ padding-top: 10px;
 .box.in-view .countertext {
   transform: scale(1.2);
 }
-
+.content.in-view {
+  transform: scale(1.0);
+}
+.content.in-view .subtitle1 {
+  transform: scale(1.0);
+}
+.content.in-view .subsubtitle1 {
+  transform: scale(1.0);
+}
+.content.in-view .title1 {
+  transform: scale(1.0);
+}
+.card.in-view {
+  transform: scale(1.0);
+}
+.card.in-view .card-body {
+  transform: scale(1.0);
+}
+.card.in-view .card-header {
+  transform: scale(1);
+}
 .box {
   background: rgba(135, 168, 222, 0.418);
   border-radius: 20px;
@@ -471,53 +489,6 @@ display: inline;
   transform: translateY(0);
 }
 
-/* Animaciones ordenadas */
-.subtitle1.animate-on-scroll.in-view {
-  animation: fadeSlideUp 1.2s ease-out forwards;
-}
-.subsubtitle1.animate-on-scroll.in-view {
-  animation: fadeInGrow 1.2s ease-out forwards;
-  animation-delay: 0.4s;
-}
-.title1.animate-on-scroll.in-view {
-  animation: fadeSlideDown 1.2s ease-out forwards;
-  animation-delay: 0.8s;
-}
-
-/* Keyframes existentes o nuevos */
-@keyframes fadeSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeSlideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInGrow {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  60% {
-    transform: scale(1.05);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-} 
 .card-header {
   background-color: #87a8e3;
   color: white;
@@ -685,6 +656,15 @@ display: inline;
 .flower-right2.in-view {
   animation: flowerFloatRight 5.5s ease-in-out infinite;
 }
+.flower-left.in-view {
+  animation: flowerFloatLeft 5s ease-out infinite;
+}
+.flower-center.in-view {
+  animation: flowerFloatCenter 6s ease-out infinite;
+}
+.flower-right.in-view {
+  animation: flowerFloatRight 5.5s ease-out infinite;
+}
 
 /* Keyframes para movimiento flotante */
 @keyframes flowerFloatLeft {
@@ -816,7 +796,7 @@ display: inline;
   max-height: 180px;
   position: relative;
   top: 70px;
-  left: 50px;
+  left: 100px;
 }
 /* Animación sutil */
 @keyframes fadeIn {

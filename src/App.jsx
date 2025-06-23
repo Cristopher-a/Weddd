@@ -84,7 +84,7 @@ useEffect(() => {
       <section className="section1" style={{
   backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0)), url(${bg})`
 }}>
-  <div className="content">
+  <div className="content animate-on-scroll">
     <p className="subtitle1 animate-on-scroll">Después de mucho, ha llegado el momento.</p>
     <p className="subsubtitle1 animate-on-scroll">¡Nos casamos!</p>
     <h1 className="title1 animate-on-scroll">Kenny & Juan</h1>
@@ -100,28 +100,28 @@ useEffect(() => {
             ▶
           </button>
 
-      <div className="flowers-divider">
-        <img src={flower1} className="flower-left" />
-        <img src={flower2} className="flower-center" />
-        <img src={flower3} className="flower-right" />
+      <div className="flowers-divider animate-on-scroll">
+        <img src={flower1} className="flower-left animate-on-scroll" />
+        <img src={flower2} className="flower-center animate-on-scroll" />
+        <img src={flower3} className="flower-right animate-on-scroll" />
       </div>
 
       <section className="section2">
  <div className="container animate-on-scroll">
   <div className="box animate-on-scroll">
-    <h2 className="countertext animate-on-scroll">{timeLeft.days}</h2>
+    <h2 className="countertext animate-on-scroll">{formatNumber(timeLeft.days)}</h2>
     <p className="counter-label">Días</p>
   </div>
   <div className="box animate-on-scroll">
-    <h2 className="countertext animate-on-scroll">{timeLeft.hours}</h2>
+    <h2 className="countertext animate-on-scroll">{formatNumber(timeLeft.hours)}</h2>
     <p className="counter-label ">Horas</p>
   </div>
   <div className="box animate-on-scroll">
-    <h2 className="countertext animate-on-scroll">{timeLeft.minutes}</h2>
+    <h2 className="countertext animate-on-scroll">{formatNumber(timeLeft.minutes)}</h2>
     <p className="counter-label">Minutos</p>
   </div>
   <div className="box animate-on-scroll">
-    <h2 className="countertext animate-on-scroll">{timeLeft.seconds}</h2>
+    <h2 className="countertext animate-on-scroll">{formatNumber(timeLeft.seconds)}</h2>
     <p className="counter-label ">Segundos</p>
   </div>
 </div>
@@ -147,27 +147,27 @@ useEffect(() => {
 
       <section className="section3">
         <div className="separador2">
-          <div className="card">
-            <div className="card-header">Ceremonia</div>
-            <div className="card-body">
-              <p>Ven a compartir con nosotros la<br /> bendición de este gran día.</p>
-              <p className="hour">6:00 PM - 7:00 PM</p>
-              <p className="place">Templo de Santo Domingo de Guzmán</p>
-              <a className="map-button" href="https://maps.app.goo.gl/zTNFU7F9FPT6sWZa9" target="_blank">
+          <div className="card animate-on-scroll">
+            <div className="card-header ">Ceremonia</div>
+            <div className="card-body animate-on-scroll">
+              <p className='animate-on-scroll'>Ven a compartir con nosotros la<br /> bendición de este gran día.</p>
+              <p className="hour animate-on-scroll">6:00 PM - 7:00 PM</p>
+              <p className="place animate-on-scroll">Templo de Santo Domingo de Guzmán</p>
+              <a className="map-button animate-on-scroll" href="https://maps.app.goo.gl/zTNFU7F9FPT6sWZa9" target="_blank">
                 <img src="https://www.gstatic.com/images/icons/material/system/2x/place_gm_blue_24dp.png" alt="icon" />
                 Abrir mapa del lugar
               </a>
             </div>
           </div>
 
-          <div className="card">
+          <div className="card animate-on-scroll">
             <div className="card-header">Recepción</div>
-            <div className="card-body">
-              <p className="place">Salón Jardines</p>
-              <p>El amor se celebra bailando, riendo y compartiendo. ¡Te esperamos en el salón!</p>
-              <p className="hour">8:00 PM - 3:00 AM</p>
-              <p className="place">Av. Jardines de Morelos 158</p>
-              <a className="map-button" href="https://maps.app.goo.gl/W3EwrRJrEKvjVki29?g_st=aw" target="_blank">
+            <div className="card-body animate-on-scroll">
+              <p className="place animate-on-scroll">Salón Jardines</p>
+              <p className='animate-on-scroll'>El amor se celebra bailando, riendo y compartiendo. ¡Te esperamos en el salón!</p>
+              <p className="hour animate-on-scroll">8:00 PM - 3:00 AM</p>
+              <p className="place animate-on-scroll">Av. Jardines de Morelos 158</p>
+              <a className="map-button animate-on-scroll" href="https://maps.app.goo.gl/W3EwrRJrEKvjVki29?g_st=aw" target="_blank">
                 <img src="https://www.gstatic.com/images/icons/material/system/2x/place_gm_blue_24dp.png" alt="icon" />
                 Abrir mapa del lugar
               </a>
