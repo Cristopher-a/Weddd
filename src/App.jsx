@@ -109,33 +109,36 @@ useEffect(() => {
         <img src={flower3} className="flower-right animate-on-scroll" />
       </div>
        <section className="section4">
-        <p className="textvest">
-           El amor que hoy celebramos tiene raíces profundas.
-Fuimos criados con ternura, paciencia y valores que nos mostraron el verdadero significado del compromiso.
+        <p className="textpadres">
+          Con mucho amor y agradecimiento,<br />
+presentamos a quienes nos han guiado con su ejemplo,<br />
+nos han acompañado en cada paso y <br />
+hoy comparten con nosotros esta alegría inmensa:
           </p>
         <div className="vestimenta">
-          <img src={madre} className='vestimentaimg' />
-          <p className="textvest">
-            Laura Claudia Sánchez Luna <br />
+          <img src={madre} className='noviaimg' />
+          <p className="textpadresna">
+            Laura Claudia Sánchez Luna <br /><br />
             Rafael Gama Rangel
           </p>
-          <img src={padre} className='vestimentaimg' />
-          <p className="textvest">
+          <img src={padre} className='novioimg' />
+          <p className="textpadresno">
             Ruth Pimentel Ávila
           </p>
-          <p className="textvest">
-            Gracias a su ejemplo y bendición, hoy damos este paso, confiando plenamente en el<strong>“para siempre”</strong>.
+          <p className="textvest"><br />
+            Gracias a su ejemplo y bendición, hoy damos este paso,<br /> confiando plenamente en el<strong> “para siempre”</strong>.
           </p>
        
 
         </div>
       </section>
 
-      <div className="flowers-divider4">
-        <img src={flower4} className="flower-left4" />
-        <img src={flower3} className="flower-center4" />
-        <img src={flower1} className="flower-right4" />
-      </div>
+      <div className="flowers-divider2 ">
+  <img src={flower3} className="flower-left2 animate-on-scroll" />
+  <img src={flower4} className="flower-center2 animate-on-scroll" />
+  <img src={flower2} className="flower-right2 animate-on-scroll" />
+</div>
+
 
       <section className="section2">
  <div className="container animate-on-scroll">

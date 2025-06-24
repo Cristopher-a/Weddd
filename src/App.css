@@ -286,6 +286,26 @@ padding-top: 10px;
   text-align: center;
   margin-top: 20px;
 }
+
+.textpadres{
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  
+  text-align: center;
+  margin-top: 90px;
+}.textpadresna{
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  
+  text-align: center;
+  margin-top: 90px;
+}.textpadresno{
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  
+  text-align: center;
+  margin-top: 90px;
+}
 .btn {
   text-decoration: none;
   padding: 12px 28px;
@@ -801,6 +821,19 @@ display: inline;
   height: 20px;
 }
 .vestimentaimg{
+  max-height: 180px;
+  position: relative;
+  top: 70px;
+  left: 100px;
+}
+.noviaimg{
+  max-height: 180px;
+  position: relative;
+  top: 70px;
+  left: 100px;
+}
+
+.novioimg{
   max-height: 180px;
   position: relative;
   top: 70px;
