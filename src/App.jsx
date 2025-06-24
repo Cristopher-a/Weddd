@@ -9,7 +9,7 @@ import vestimenta from './assets/Vestimenta.svg'
 import madre from './assets/SVG/Recurso 3.svg'
 import padre from './assets/SVG/Recurso 4.svg'
 import audio from './assets/song/Wrong-Instrumental.mp3'
-
+import cruz from './assets/SVG/Recurso 1.svg'
 
 function App() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
@@ -181,9 +181,9 @@ hoy comparten con nosotros esta alegría inmensa:
 
       <section className="section3">
         <div className="separador2">
-          <div className="card animate-on-scroll">
-            <div className="card-header ">Ceremonia</div>
+          
             <div className="card-body animate-on-scroll">
+              <img src={cruz} alt="" />
               <p >Ven a compartir con nosotros la<br /> bendición de este gran día.</p>
               <p className="hour ">6:00 PM - 7:00 PM</p>
               <p className="place ">Templo de Santo Domingo de Guzmán</p>
@@ -191,11 +191,10 @@ hoy comparten con nosotros esta alegría inmensa:
                 <img src="https://www.gstatic.com/images/icons/material/system/2x/place_gm_blue_24dp.png" alt="icon" />
                 Abrir mapa del lugar
               </a>
-            </div>
+           
           </div>
 
-          <div className="card animate-on-scroll">
-            <div className="card-header">Recepción</div>
+        
             <div className="card-body animate-on-scroll">
               <p className="place ">Salón Jardines</p>
               <p >El amor se celebra bailando, riendo y compartiendo. ¡Te esperamos en el salón!</p>
@@ -205,7 +204,7 @@ hoy comparten con nosotros esta alegría inmensa:
                 <img src="https://www.gstatic.com/images/icons/material/system/2x/place_gm_blue_24dp.png" alt="icon" />
                 Abrir mapa del lugar
               </a>
-            </div>
+     
           </div>
         </div>
       </section>
